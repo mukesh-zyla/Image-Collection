@@ -1,0 +1,101 @@
+<%{
+%>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<div style="min-height:100vh;box-sizing:border-box;margin:0;padding:36px 28px;background:#1c1a4a;background-image:linear-gradient(145deg,#1c1a4a 0%,#2d2a78 60%,#3a33a8 100%);font-family:'Poppins',Arial,Helvetica,sans-serif;color:#ffffff;position:relative;overflow:hidden;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;">
+
+    <!-- Background glows -->
+    <div style="position:absolute;width:320px;height:320px;border-radius:50%;background:#5548f5;opacity:0.35;top:-120px;right:-100px;"></div>
+    <div style="position:absolute;width:360px;height:360px;border-radius:50%;background:#7b6ff7;opacity:0.22;bottom:-160px;left:-140px;"></div>
+
+    <div style="position:relative;max-width:460px;width:100%;">
+
+        <!-- Logo -->
+        <div style="font-size:44px;font-weight:700;letter-spacing:-1.5px;line-height:1;">zyla</div>
+
+        <!-- Illustration -->
+        <div style="margin:22px 0 18px;">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="120 170 640 480" style="width:100%;max-width:360px;height:auto;display:block;margin:0 auto;">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1c1a4a"/><stop offset="1" stop-color="#3a33a8"/>
+    </linearGradient>
+    <linearGradient id="heart" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#8f84ff"/><stop offset="1" stop-color="#5548f5"/>
+    </linearGradient>
+    <filter id="sh" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="14" stdDeviation="16" flood-color="#0b0930" flood-opacity=".45"/>
+    </filter>
+  </defs>
+  
+  <!-- dots grid -->
+  <g fill="#ffffff" opacity=".15">
+    <circle cx="80" cy="90" r="3"/><circle cx="110" cy="90" r="3"/><circle cx="140" cy="90" r="3"/>
+    <circle cx="80" cy="120" r="3"/><circle cx="110" cy="120" r="3"/><circle cx="140" cy="120" r="3"/>
+    <circle cx="80" cy="150" r="3"/><circle cx="110" cy="150" r="3"/><circle cx="140" cy="150" r="3"/>
+    <circle cx="660" cy="660" r="3"/><circle cx="690" cy="660" r="3"/><circle cx="720" cy="660" r="3"/>
+    <circle cx="660" cy="690" r="3"/><circle cx="690" cy="690" r="3"/><circle cx="720" cy="690" r="3"/>
+  </g>
+
+  
+
+  <!-- clipboard card -->
+  <g filter="url(#sh)">
+    <rect x="250" y="210" width="300" height="360" rx="28" fill="#ffffff"/>
+  </g>
+  <rect x="340" y="190" width="120" height="42" rx="14" fill="#ecebff" stroke="#5548f5" stroke-width="4"/>
+  <circle cx="400" cy="211" r="7" fill="#5548f5"/>
+  <!-- heart with ECG -->
+  <path d="M400 380 C360 350 318 320 318 284 C318 258 338 240 362 240 C380 240 392 250 400 262 C408 250 420 240 438 240 C462 240 482 258 482 284 C482 320 440 350 400 380 Z" fill="url(#heart)"/>
+  <path d="M322 300 L368 300 L380 276 L396 326 L410 288 L420 300 L478 300" stroke="#ffffff" stroke-width="7" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- checklist -->
+  <g font-family="Poppins,Arial,sans-serif">
+    <circle cx="292" cy="432" r="14" fill="#22c55e"/><path d="M285 432 l5 5 l9 -10" stroke="#fff" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="318" y="424" width="190" height="16" rx="8" fill="#e6e4fb"/>
+    <circle cx="292" cy="482" r="14" fill="#22c55e"/><path d="M285 482 l5 5 l9 -10" stroke="#fff" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="318" y="474" width="150" height="16" rx="8" fill="#e6e4fb"/>
+    <circle cx="292" cy="532" r="14" fill="none" stroke="#c9c3f7" stroke-width="3"/>
+    <rect x="318" y="524" width="170" height="16" rx="8" fill="#e6e4fb"/>
+  </g>
+
+  <!-- stethoscope around card -->
+  <path d="M560 300 C640 300 650 420 600 470 C560 510 560 560 600 600" stroke="#c9c3f7" stroke-width="10" fill="none" stroke-linecap="round"/>
+  <circle cx="612" cy="618" r="28" fill="#ffffff" stroke="#c9c3f7" stroke-width="8"/>
+  <circle cx="612" cy="618" r="11" fill="#5548f5"/>
+  <circle cx="560" cy="300" r="10" fill="#c9c3f7"/>
+
+  <!-- floating badges -->
+  <g filter="url(#sh)">
+    <circle cx="190" cy="300" r="42" fill="#ffffff"/>
+  </g>
+  <path d="M190 276 v48 M166 300 h48" stroke="#ef4f6b" stroke-width="12" stroke-linecap="round"/>
+  <g filter="url(#sh)">
+    <rect x="150" y="470" width="84" height="84" rx="22" fill="#ffffff"/>
+  </g>
+  <g transform="rotate(-40 192 512)"><rect x="164" y="500" width="56" height="24" rx="12" fill="#5548f5"/><path d="M176 500 h16 v24 h-16 a12 12 0 0 1 0 -24z" fill="#8f84ff"/></g>
+
+  <!-- sparkles -->
+  <g fill="#ffd166">
+    <path d="M640 250 l6 14 l14 6 l-14 6 l-6 14 l-6 -14 l-14 -6 l14 -6z"/>
+    <path d="M225 205 l4 9 l9 4 l-9 4 l-4 9 l-4 -9 l-9 -4 l9 -4z"/>
+  </g>
+
+  <!-- leaf -->
+  <g opacity=".7">
+    <path d="M700 520 C700 480 712 450 730 430" stroke="#b3abf3" stroke-width="3" fill="none"/>
+    <path d="M730 430 C750 436 752 462 732 470 C718 462 718 440 730 430 Z" fill="#c9c3f7"/>
+    <path d="M708 478 C690 470 674 482 678 500 C694 504 706 494 708 478 Z" fill="#b3abf3"/>
+  </g>
+
+  </svg>
+
+        </div>
+
+        <!-- Welcome -->
+        <div style="font-size:28px;font-weight:700;line-height:1.25;">Welcome to Zyla Health Camp</div>
+        <div style="font-size:15px;color:#c9c3f7;margin-top:8px;">Healthier People, Brighter Tomorrow</div>
+
+    </div>
+</div>
+<%
+}%>
